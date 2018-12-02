@@ -1,8 +1,32 @@
 # Feature Engineering & Feature Selection
 
-## About
+A comprehensive guide [[pdf]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.pdf) [[markdown]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md) for **Feature Engineering** and **Feature Selection**, with implementations and examples in Python.
 
-A comprehensive [guide](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#452-recursive-feature-addition) for **Feature Engineering** and **Feature Selection**, with implementations and examples in Python.
+## Motivation
+
+Feature Engineering & Selection is the most essential part of building a useable machine learning project, even though hundreds of cutting-edge machine learning algorithms coming in these days like deep learning and transfer learning. Indeed, like what Prof Domingos, the author of  'The Master Algorithm' says:
+
+> “At the end of the day, some machine learning projects succeed and some fail. What makes the difference? Easily the most important factor is the features used.”
+>
+> — Prof. Pedro Domingos
+
+![001](images/001.png)
+
+
+
+Data and feature has the most impact on a ML project and sets the limit of how well we can do, while models and algorithms are just approaching that limit. However, few materials could be found that systematically introduce the art of feature engineering, and even fewer could explain the rationale behind. This repo is my personal notes from learning ML and serves as a reference for Feature Engineering & Selection.
+
+## Download
+
+Download the PDF here:
+
+- https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.pdf
+
+Same, but in markdown:
+
+- https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md
+
+PDF has a much readable format, while Markdown has automated anchor link to navigate from outer source. GitHub sucks at displaying markdown with complex grammar, so I would suggest read the PDF or download the repo and read markdown with [Typora](https://typora.io/). 
 
 
 
@@ -37,9 +61,12 @@ To run the demos or use the customized function,  please download the ZIP file f
 
 ## Table of Contents and Code Examples
 
-Below is a list of methods currently implemented in the repo. The complete guide can be found [here](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md).
+Below is a list of methods currently implemented in the repo. 
 
-- **1. Data Exploration**
+The complete guide can be found in [[pdf]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.pdf) or [[markdown]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md)
+
+**1. Data Exploration**
+
   -    1.1 Variables 
   -    1.2 Variable Identification
     -    Check Data Types   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#12-variable-identification)  [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/1_Demo_Data_Explore.ipynb)
@@ -54,7 +81,8 @@ Below is a list of methods currently implemented in the repo. The complete guide
     -    Correlation Plot   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#14-bi-variate-analysis)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/1_Demo_Data_Explore.ipynb)
     -    Heat Map   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#14-bi-variate-analysis)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/1_Demo_Data_Explore.ipynb)
 
-- **2. Feature Cleaning**
+**2. Feature Cleaning**
+
   -    2.1 Missing Values
     -    Missing Value Check   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#214-how-to-handle-missing-data)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.1_Demo_Missing_Data.ipynb)
     -    Listwise Deletion   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#214-how-to-handle-missing-data)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.1_Demo_Missing_Data.ipynb)
@@ -81,7 +109,7 @@ Below is a list of methods currently implemented in the repo. The complete guide
     -    Grouping Labels with Rare Occurrence into One Category   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#24-high-cardinality)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.3_Demo_Rare_Values.ipynb)
     -    Grouping Labels with Decision Tree   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#24-high-cardinality)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.2_Demo_Discretisation.ipynb)
 
-- **3. Feature Engineering**
+**3. Feature Engineering**
   -    3.1 Feature Scaling  
     -    Normalization - Standardization    [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#31-feature-scaling)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.1_Demo_Feature_Scaling.ipynb)
     -    Min-Max Scaling   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#31-feature-scaling)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.1_Demo_Feature_Scaling.ipynb)
@@ -116,7 +144,8 @@ Below is a list of methods currently implemented in the repo. The complete guide
     -    Feature Learning by Tree   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#35-feature-generation)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.5_Demo_Feature_Generation.ipynb)
     -    Feature Learning by Deep Network   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#35-feature-generation)  
 
-- **4. Feature Selection**
+**4. Feature Selection**
+
   -    4.1 Filter Method
     -    Variance   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#41-filter-method)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.1_Demo_Feature_Selection_Filter.ipynb)
     -    Correlation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#41-filter-method)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.1_Demo_Feature_Selection_Filter.ipynb)
@@ -137,23 +166,6 @@ Below is a list of methods currently implemented in the repo. The complete guide
   -    4.5 Hybrid Method
     -    Recursive Feature Selection    [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#451-recursive-feature-elimination)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.5_Demo_Feature_Selection_Hybrid_method.ipynb)
     -    Recursive Feature Addition   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#452-recursive-feature-addition)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.5_Demo_Feature_Selection_Hybrid_method.ipynb)
-
-
-
-
-## Motivation
-
-Feature Engineering & Selection is the most essential part of building a useable machine learning project, even though hundreds of cutting-edge machine learning algorithms coming in these days like deep learning and transfer learning. Indeed, like what Prof Domingos, the author of  *'The Master Algorithm'* says:
-
-> “At the end of the day, some machine learning projects succeed and some fail. What makes the difference? Easily the most important factor is the features used.”
->
-> — Prof. Pedro Domingos
-
-![001](./images/001.png)
-
-
-
-Data and feature determine the upper limit of a ML project, while models and algorithms are just approaching that limit. However, few materials could be found that systematically introduce the art of feature engineering, and even fewer could explain the rationale behind. This repo aims at teaching you a good guide for Feature Engineering & Selection.
 
 
 

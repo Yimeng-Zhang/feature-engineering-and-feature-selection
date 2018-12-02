@@ -1,75 +1,6 @@
 **Table of Contents**:
 
-A Short Guide for Feature Engineering and Feature Selection
-​	0. Basic Concepts
-​		0.1 What is Machine Learning
-​		0.2 Methodology
-​		0.3 Typical Tasks
-​		0.4 Terminology
-​	1. Data Exploration
-​		1.1 Variables
-​		1.2 Variable Identification
-​		1.3 Univariate Analysis
-​		1.4 Bi-variate Analysis
-​	2. Feature Cleaning
-​		2.1 Missing Values
-​			2.1.1 Why Missing Data Matters
-​			2.1.2 Missing Mechanisms 
-​			2.1.3 How to Assume a Missing Mechanism
-​			2.1.4 How to Handle Missing Data
-​		2.2 Outliers
-​			2.2.1 Why Outlier Matters
-​			2.2.2 Outlier Detection
-​			2.2.3 How to Handle Outliers
-​		2.3 Rare Values
-​			2.3.1 Why Rare Value Matters
-​			2.3.2 How to Handle Rare Value
-​		2.4 High Cardinality
-​			2.4.1 Why High Cardinality Matters
-​			2.4.2 How to Handle High Cardinality
-​	3. Feature Engineering
-​		3.1 Feature Scaling
-​			3.1.1 Why Feature Scaling Matters
-​			3.1.2 How to Handle Feature Scaling
-​		3.2 Discretize
-​			3.2.1 Why Discretize Matters
-​			3.2.2 How to Handle Discretization
-​		3.3 Feature Encoding
-​			3.3.1 Why Feature Encoding Matters
-​			3.3.2 How to Handle Feature Encoding
-​		3.4 Feature Transformation
-​			3.4.1 Why Feature Transformation Matters
-​				3.4.1.1 Linear Assumption
-​				3.4.1.2 Variable Distribution
-​			3.4.2 How to Handle Feature Transformation
-​		3.5 Feature Generation
-​			3.5.1 Missing Data Derived Feature
-​			3.5.2 Simple Statistical Derived Feature
-​			3.5.3 Feature Crossing
-​			3.5.4 Ratios and Proportions
-​			3.5.5 Cross Products between Categorical Features
-​			3.5.6 Polynomial Expansion
-​			3.5.7 Feature Learning by Trees
-​			3.5.8 Feature Learning by Deep Networks
-​	4. Feature Selection
-​		4.1 Filter Method
-​		4.2 Wrapper Method
-​			4.2.1 Forward Selection
-​			4.2.2 Backward Elimination
-​			4.2.3 Exhaustive Feature Selection
-​			4.2.4 Genetic Algorithm
-​		4.3 Embedded Method
-​			4.3.1 Regularization with Lasso
-​			4.3.2 Random Forest Importance
-​			4.3.3 Gradient Boosted Trees Importance
-​		4.4 Feature Shuffling
-​		4.5 Hybrid Method
-​			4.5.1 Recursive Feature Elimination
-​			4.5.2 Recursive Feature Addition
-​		4.6 Dimensionality Reduction
-​	5. Data Leakage
-
-
+[TOC]
 
 # A Short Guide for Feature Engineering and Feature Selection
 
@@ -96,8 +27,7 @@ A typical ML workflow/pipeline looks like this:
 
 ![workflow](/images/workflow2.png)
 
-
-​				Source: Practical Machine Learning with Python, Springer  
+[img source](https://www.springer.com/us/book/9781484232064) 
 
 
 There can be many ways to divide the tasks that make up the ML workflow into phases. But generally the basic steps are similar as the graph above.
@@ -158,7 +88,7 @@ There can be many ways to divide the tasks that make up the ML workflow into pha
 
 Descriptive statistics on one single variable.
 
-| Variable    | What to look                                                 |
+| Variable    | What to look for                                             |
 | ----------- | ------------------------------------------------------------ |
 | Categorical | **Shape**:<br />Histogram/ Frequency table...                |
 | Numerical   | **Central Tendency**:<br />Mean/ Median/ Mode<br />**Dispersion**:<br />Min/ Max/ Range/ Quantile/ IQR/ MAD/ Variance/ Standard Deviation/ <br />**Shape**:<br />Skewness/ Histogram/ Boxplot... |
@@ -179,7 +109,6 @@ Below are some methods that can give us the basic stats on the variable:
 Descriptive statistics between two or more variables.
 
 - Scatter Plot
-
 - Correlation Plot
 - Heat Map
 
@@ -248,7 +177,7 @@ But we should keep in mind that we can hardly 100% be sure that data are MCAR, M
 #### 2.1.4 How to Handle Missing Data
 
 | Method                         | Definition                                                   | Pros                                                   | Cons                                                         |
-| ------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------ | :----------------------------------------------------------- |
+| ------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------ | ----------------------------------------------------------- |
 | Listwise Deletion              | excluding all cases (listwise) that have missing values      | preserve distribution if MCAR                          | 1. may discard too much data and hurt the model<br>2. may yield biased estimates if not MCAR (as we keep a special subsample from the population) |
 | Mean/Median/Mode Imputation    | replacing the NA by mean/median/most frequent values (for categorical feature) of that variable | good practice if MCAR                                  | 1. distort distribution<br>2. distort relationship with other variables |
 | End of distribution Imputation | replacing the NA by values that are at the far end of the distribution of that variable, calculated by mean + 3*std | Captures the importance of missingness if there is one | 1. distort distribution<br />2. may be considered outlier if NA is few or mask true outlier if NA is many.<br />3. if missingness is not important this may mask the predictive power of the original variable |
@@ -409,7 +338,7 @@ As we can see, Normalization - Standardization and Min-Max method will compress 
 
 Experience on how to choose feature scaling method:
 
-- if your feature is not Gaussian like, say, has a skewed distribution or has outliers, Normalization - Standardization is not a good choice as it will compress most data to a narrow range.
+- If your feature is not Gaussian like, say, has a skewed distribution or has outliers, Normalization - Standardization is not a good choice as it will compress most data to a narrow range.
 - However, we can transform the feature into Gaussian like and then use Normalization - Standardization. Feature transformation will be discussed in section 3.4
 - When performing distance or covariance calculation (algorithm like Clustering, PCA and LDA), it is better to use Normalization - Standardization as it will remove the effect of scales on variance and covariance. Explanation [here](https://blog.csdn.net/zbc1090549839/article/details/44103801).
 - Min-Max scaling has the same drawbacks as Normalization - Standardization, and also new data may not be bounded to [0,1] as they can be out of the original range. Some algorithms, for example some deep learning network prefer input on a 0-1 scale so this is a good choice.
@@ -549,7 +478,7 @@ We can use **Q-Q plot** to check if the variable is normally distributed (a 45 d
 
 Below is an example showing the effect of sklearn's Box-plot/Yeo-johnson/Quantile transform to map data from various distributions to a normal distribution.
 
-![sphx_glr_plot_map_data_to_normal_001](.\images\sphx_glr_plot_map_data_to_normal_001.png)
+![](images/sphx_glr_plot_map_data_to_normal_001.png)
 
 [img source](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_map_data_to_normal.html#sphx-glr-auto-examples-preprocessing-plot-map-data-to-normal-py) 
 
@@ -664,7 +593,7 @@ As a result, filter methods are suited for a first step quick screen and removal
 
 WOE encoding (see section 3.3.2) and IV often go hand in hand in scorecard development. The two concepts both derived from logistic regression and is kind of standard practice in credit card industry.  IV is a popular and widely used measure as there are very convenient rules of thumb for variables selection associated with IV as below:
 
-![sphx_glr_plot_map_data_to_normal_001](.\images\IV.png)
+![](images/IV.png)
 
 However, all these filtering methods fail to consider the interaction between features and may reduce our predict power. Personally I only use variance and correlation to filter some absolutely unnecessary features.
 
