@@ -2,7 +2,7 @@
 
 ## About
 
-A comprehensive [guide]() for **Feature Engineering** and **Feature Selection**, with implementations and examples in Python.
+A comprehensive [guide](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#452-recursive-feature-addition) for **Feature Engineering** and **Feature Selection**, with implementations and examples in Python.
 
 
 
@@ -37,111 +37,106 @@ To run the demos or use the customized function,  please download the ZIP file f
 
 ## Table of Contents and Code Examples
 
-Below is a list of methods currently implemented in the repo. The complete guide can be found [here]().
+Below is a list of methods currently implemented in the repo. The complete guide can be found [here](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md).
 
-**1. Data Exploration**
+- **1. Data Exploration**
+  -    1.1 Variables 
+  -    1.2 Variable Identification
+    -    Check Data Types   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#12-variable-identification)  [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/1_Demo_Data_Explore.ipynb)
+  -    1.3 Univariate Analysis
+    -    Descriptive Analysis   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#13-univariate-analysis)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/1_Demo_Data_Explore.ipynb)
+    -    Discrete Variable Barplot   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#13-univariate-analysis)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/1_Demo_Data_Explore.ipynb)
+    -    Discrete Variable Countplot   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#13-univariate-analysis)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/1_Demo_Data_Explore.ipynb)
+    -    Discrete Variable Boxplot   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#13-univariate-analysis)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/1_Demo_Data_Explore.ipynb)
+    -    Continuous Variable Distplot   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#13-univariate-analysis)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/1_Demo_Data_Explore.ipynb)
+  -    1.4 Bi-variate Analysis
+    -    Scatter Plot   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#14-bi-variate-analysis)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/1_Demo_Data_Explore.ipynb)
+    -    Correlation Plot   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#14-bi-variate-analysis)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/1_Demo_Data_Explore.ipynb)
+    -    Heat Map   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#14-bi-variate-analysis)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/1_Demo_Data_Explore.ipynb)
 
-   1.1 Variables 
-   1.2 Variable Identification   
-   ​          Check Data Types
-   1.3 Univariate Analysis
-   ​          Descriptive Analysis
-   ​          Discrete Variable Barplot
-   ​          Discrete Variable Countplot
-   ​          Discrete Variable Boxplot
-   ​          Continuous Variable Distplot
-   1.4 Bi-variate Analysis
-   ​          Scatter Plot
-   ​          Correlation Plot
-   ​          Heat Map
+- **2. Feature Cleaning**
+  -    2.1 Missing Values
+    -    Missing Value Check   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#214-how-to-handle-missing-data)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.1_Demo_Missing_Data.ipynb)
+    -    Listwise Deletion   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#214-how-to-handle-missing-data)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.1_Demo_Missing_Data.ipynb)
+    -    Mean/Median/Mode Imputation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#214-how-to-handle-missing-data)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.1_Demo_Missing_Data.ipynb)
+    -    End of distribution Imputation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#214-how-to-handle-missing-data)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.1_Demo_Missing_Data.ipynb)
+    -    Random Imputation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#214-how-to-handle-missing-data)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.1_Demo_Missing_Data.ipynb)
+    -    Arbitrary Value Imputation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#214-how-to-handle-missing-data)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.1_Demo_Missing_Data.ipynb)
+    -    Add a variable to denote NA   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#214-how-to-handle-missing-data)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.1_Demo_Missing_Data.ipynb)
+  -    2.2 Outliers
+    -    Detect by Arbitrary Boundary   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#222-outlier-detection)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.2_Demo_Outlier.ipynb)
+    -    Detect by Mean & Standard Deviation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#222-outlier-detection)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.2_Demo_Outlier.ipynb)
+    -    Detect by IQR    [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#222-outlier-detection)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.2_Demo_Outlier.ipynb)
+    -    Detect by MAD      [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#222-outlier-detection)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.2_Demo_Outlier.ipynb)
+    -    Mean/Median/Mode Imputation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#223-how-to-handle-outliers)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.2_Demo_Outlier.ipynb)
+    -    Discretization   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#223-how-to-handle-outliers)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.2_Demo_Discretisation.ipynb)
+    -    Imputation with Arbitrary Value   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#223-how-to-handle-outliers)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.2_Demo_Outlier.ipynb)
+    -    Windsorization   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#223-how-to-handle-outliers)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.2_Demo_Outlier.ipynb)
+    -    Discard Outliers   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#223-how-to-handle-outliers)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.2_Demo_Outlier.ipynb)
+  -    2.3 Rare Values
+    -    Mode Imputation     [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#23-rare-values)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.3_Demo_Rare_Values.ipynb)
+    -    Grouping into One New Category   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#23-rare-values)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.3_Demo_Rare_Values.ipynb)
+  -    2.4 High Cardinality
+    -    Grouping Labels with Business Understanding    [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#24-high-cardinality) 
+    -    Grouping Labels with Rare Occurrence into One Category   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#24-high-cardinality)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.3_Demo_Rare_Values.ipynb)
+    -    Grouping Labels with Decision Tree   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#24-high-cardinality)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.2_Demo_Discretisation.ipynb)
 
-**2. Feature Cleaning**
+- **3. Feature Engineering**
+  -    3.1 Feature Scaling  
+    -    Normalization - Standardization    [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#31-feature-scaling)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.1_Demo_Feature_Scaling.ipynb)
+    -    Min-Max Scaling   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#31-feature-scaling)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.1_Demo_Feature_Scaling.ipynb)
+    -    Robust Scaling   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#31-feature-scaling)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.1_Demo_Feature_Scaling.ipynb)
+  -    3.2 Discretize   
+    -    Equal Width Binning   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#32-discretize)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.2_Demo_Discretisation.ipynb)
+    -    Equal Frequency Binning   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#32-discretize)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.2_Demo_Discretisation.ipynb)
+    -    K-means Binning      [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#32-discretize)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.2_Demo_Discretisation.ipynb)
+    -    Discretization by Decision Trees   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#32-discretize)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.2_Demo_Discretisation.ipynb)
+    -    ChiMerge   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#32-discretize)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.2_Demo_Discretisation.ipynb)
+  -    3.3 Feature Encoding
+    -    One-hot Encoding   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#33-feature-encoding)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.3_Demo_Feature_Encoding.ipynb)
+    -    Ordinal-Encoding   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#33-feature-encoding)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.3_Demo_Feature_Encoding.ipynb)
+    -    Count/frequency Encoding    [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#33-feature-encoding) 
+    -    Mean Encoding   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#33-feature-encoding)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.3_Demo_Feature_Encoding.ipynb)
+    -    WOE Encoding   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#33-feature-encoding)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.3_Demo_Feature_Encoding.ipynb)
+    -    Target Encoding   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#33-feature-encoding)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.3_Demo_Feature_Encoding.ipynb)
+  -    3.4 Feature Transformation
+    -    Logarithmic Transformation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#34-feature-transformation)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.4_Demo_Feature_Transformation.ipynb)
+    -    Reciprocal Transformation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#34-feature-transformation)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.4_Demo_Feature_Transformation.ipynb)
+    -    Square Root Transformation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#34-feature-transformation)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.4_Demo_Feature_Transformation.ipynb)
+    -    Exponential Transformation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#34-feature-transformation)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.4_Demo_Feature_Transformation.ipynb)
+    -    Box-cox Transformation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#34-feature-transformation)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.4_Demo_Feature_Transformation.ipynb)
+    -    Quantile Transformation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#34-feature-transformation)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.4_Demo_Feature_Transformation.ipynb)
+  -    3.5 Feature Generation
+    -    Missing Data Derived   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#35-feature-generation)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/2.1_Demo_Missing_Data.ipynb)
+    -    Simple Stats   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#35-feature-generation) 
+    -    Crossing   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#35-feature-generation) 
+    -    Ratio & Proportion   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#35-feature-generation) 
+    -    Cross Product   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#35-feature-generation) 
+    -    Polynomial   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#35-feature-generation)  [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.5_Demo_Feature_Generation.ipynb)
+    -    Feature Learning by Tree   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#35-feature-generation)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/3.5_Demo_Feature_Generation.ipynb)
+    -    Feature Learning by Deep Network   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#35-feature-generation)  
 
-   2.1 Missing Values
-   ​          Missing Value Check
-   ​          Listwise Deletion
-   ​          Mean/Median/Mode Imputation
-   ​          End of distribution Imputation
-   ​          Random Imputation
-   ​          Arbitrary Value Imputation
-   ​          Add a variable to denote NA
-   2.2 Outliers
-   ​          Detect by Arbitrary Boundary
-   ​          Detect by Mean & Standard Deviation
-   ​          Detect by IQR 
-   ​          Detect by MAD   
-   ​          Mean/Median/Mode Imputation
-   ​          Discretization
-   ​          Imputation with Arbitrary Value
-   ​          Windsorization
-   ​          Discard Outliers
-   2.3 Rare Values
-   ​          Mode Imputation  
-   ​          Grouping into One New Category
-   2.4 High Cardinality
-   ​          Grouping Labels with Business Understanding 
-   ​          Grouping Labels with Rare Occurrence into One Category
-   ​          Grouping Labels with Decision Tree
-
-**3. Feature Engineering**
-
-   3.1 Feature Scaling  
-   ​          Normalization - Standardization 
-   ​          Min-Max Scaling
-   ​          Robust Scaling
-   3.2 Discretize   
-   ​          Equal Width Binning
-   ​          Equal Frequency Binning
-   ​          K-means Binning   
-   ​          Discretization by Decision Trees
-   ​          ChiMerge
-   3.3 Feature Encoding
-   ​          One-hot Encoding
-   ​          Ordinal-Encoding
-   ​          Count/frequency Encoding 
-   ​          Mean Encoding
-   ​          WOE Encoding
-   ​          Target Encoding
-   3.4 Feature Transformation
-   ​          Logarithmic Transformation
-   ​          Reciprocal Transformation
-   ​          Square Root Transformation
-   ​          Exponential Transformation
-   ​          Box-cox Transformation
-   ​          Quantile Transformation
-   3.5 Feature Generation
-   ​          Missing Data Derived
-   ​          Simple Stats
-   ​          Crossing
-   ​          Ratio & Proportion
-   ​          Cross Product
-   ​          Polynomial
-   ​          Feature Leanring by Tree
-   ​          Feature Leanring by Deep Network
-
-**4. Feature Selection**
-
-   4.1 Filter Method
-   ​          Variance
-   ​          Correlation
-   ​          Chi-Square
-   ​          Mutual Information Filter
-   ​          Univariate ROC-AUC or MSE
-   ​          Information Value (IV)
-   4.2 Wrapper Method
-   ​          Forward Selection
-   ​          Backward Elimination
-   ​          Exhaustive Feature Selection
-   ​          Genetic Algorithm
-   4.3 Embedded Method
-   ​          Lasso (L1)
-   ​          Random Forest Importance
-   ​          Gradient Boosted Trees Importance
-   4.4 Feature Shuffling
-   ​          Random Shuffling
-   4.5 Hybrid Method
-   ​          Recursive Feature Selection 
-   ​          Recursive Feature Addition
+- **4. Feature Selection**
+  -    4.1 Filter Method
+    -    Variance   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#41-filter-method)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.1_Demo_Feature_Selection_Filter.ipynb)
+    -    Correlation   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#41-filter-method)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.1_Demo_Feature_Selection_Filter.ipynb)
+    -    Chi-Square   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#41-filter-method)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.1_Demo_Feature_Selection_Filter.ipynb)
+    -    Mutual Information Filter   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#41-filter-method)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.1_Demo_Feature_Selection_Filter.ipynb)
+    -    Information Value (IV)   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#41-filter-method) 
+  -    4.2 Wrapper Method
+    -    Forward Selection   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#42-wrapper-method)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.2_Demo_Feature_Selection_Wrapper.ipynb)
+    -    Backward Elimination   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#42-wrapper-method)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.2_Demo_Feature_Selection_Wrapper.ipynb)
+    -    Exhaustive Feature Selection   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#42-wrapper-method)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.2_Demo_Feature_Selection_Wrapper.ipynb)
+    -    Genetic Algorithm   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#42-wrapper-method) 
+  -    4.3 Embedded Method
+    -    Lasso (L1)   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#43-embedded-method)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.3_Demo_Feature_Selection_Embedded.ipynb)
+    -    Random Forest Importance   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#43-embedded-method)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.3_Demo_Feature_Selection_Embedded.ipynb)
+    -    Gradient Boosted Trees Importance   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#43-embedded-method)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.3_Demo_Feature_Selection_Embedded.ipynb)
+  -    4.4 Feature Shuffling
+    -    Random Shuffling   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#44-feature-shuffling)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.4_Demo_Feature_Selection_Feature_Shuffling.ipynb)
+  -    4.5 Hybrid Method
+    -    Recursive Feature Selection    [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#451-recursive-feature-elimination)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.5_Demo_Feature_Selection_Hybrid_method.ipynb)
+    -    Recursive Feature Addition   [[guide]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/A%20Short%20Guide%20for%20Feature%20Engineering%20and%20Feature%20Selection.md#452-recursive-feature-addition)   [[demo]](https://github.com/Yimeng-Zhang/feature-engineering-and-feature-selection/blob/master/4.5_Demo_Feature_Selection_Hybrid_method.ipynb)
 
 
 
@@ -155,6 +150,9 @@ Feature Engineering & Selection is the most essential part of building a useable
 > — Prof. Pedro Domingos
 
 ![001](./images/001.png)
+
+
+
 Data and feature determine the upper limit of a ML project, while models and algorithms are just approaching that limit. However, few materials could be found that systematically introduce the art of feature engineering, and even fewer could explain the rationale behind. This repo aims at teaching you a good guide for Feature Engineering & Selection.
 
 
