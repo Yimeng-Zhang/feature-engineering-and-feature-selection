@@ -359,6 +359,7 @@ Below is some additional resource on this topic:
 #### 3.2.1 Why Discretize Matters
 
 - help to improve model performance by grouping of similar attributes with similar predictive strengths
+- bring into non-linearity and thus improve fitting power of the model
 - enhance interpretability with grouped values
 - minimize the impact of **extreme values/seldom reversal patterns**
 - prevent overfitting possible with numerical variables
@@ -400,6 +401,8 @@ We must transform strings of categorical variables into numbers so that algorith
 | Target encoding[10]     | Similar to mean encoding, but use both posterior probability and prior probability of the target | 1. Capture information within the label, therefore rendering more predictive features<br/>2. Create a monotonic relationship between the variable and the target<br/>3. Do not expand the feature space | Prone to cause over-fitting      |
 
 **Note**: if we are using one-hot encoding in linear regression, we should keep k-1 binary variable to avoid multicollinearity. This is true for any algorithms that look at all features at the same time during training. Including SVM, neural network and clustering. Tree-based algorithm, on the other hand, need the entire set of binary variable to select the best split.
+
+**Note**: it is not recommended to use one-hot encoding with tree algorithms. One-hot will cause the split be highly imbalanced (as each label of the original categorical feature will now be a new feature), and the result is that neither of the two child nodes will have a good gain in purity. The prediction power of the one-hot feature will be weaker than the original feature as they have been broken into many pieces.
 
 An in-detail intro to WOE can be found [here](http://documentation.statsoft.com/StatisticaHelp.aspx?path=WeightofEvidence/WeightofEvidenceWoEIntroductoryOverview).
 
