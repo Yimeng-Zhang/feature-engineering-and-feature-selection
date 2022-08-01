@@ -169,13 +169,13 @@ Below is a list of methods currently implemented in the repo.
 
 ## Key Links and Resources
 
-- Udemy's Feature Engineering online course
+- Feature Engineering online course
 
-https://www.udemy.com/feature-engineering-for-machine-learning/
+https://www.trainindata.com/p/feature-engineering-for-machine-learning
 
-- Udemy's Feature Selection online course
+- Feature Selection online course
 
-https://www.udemy.com/feature-selection-for-machine-learning
+https://www.trainindata.com/p/feature-selection-for-machine-learning
 
 - JMLR Special Issue on Variable and Feature Selection
 
