@@ -659,20 +659,34 @@ This exhaustive search is very computationally expensive. In practice for this c
 
 #### 4.2.4 Genetic Algorithm
 
-TODO
+Mathematically, the feature selection problem can be formulated as combinatorial optimization problem.
+The objective function is the generalization performance of the predictive model and the design variables are the inclusion or the exclusion of the input variables.
 
+Apparently, the search space for this problem contains $2^N$ different solutions, where $N$ is the number of the features.
+Since this process surely requires lots of computation work, the intelligent methods include the evolutionary algorithm such as Genetic Algorithm is needed.
 
+The description for the Genetic Algorithm is as follows:
+> The genetic algorithm is a stochastic method for function optimization based on natural genetics and biological evolution.
+>
+> In nature, organisms' genes tend to evolve over successive generations to better adapt to the environment. The genetic algorithm is a heuristic optimization method inspired by the procedures of
+> natural evolution.
+>
+> Genetic algorithms operate on a population of individuals to produce better and better approximations.
+>
+> The algorithm creates a new population every generation by selecting individuals according to their fitness level in the problem domain. These individuals are then recombined together using
+> operators borrowed from natural genetics. The offspring might also undergo mutation.
+
+To know more about how the algorithm is applied in the feature selection, check [Genetic algorithms for feature selection](https://neuraldesigner.com/blog/genetic_algorithms_for_feature_selection).
 
 ### 4.3 Embedded Method
 
-Embedded Method combine the advantages of the filter and wrapper methods. A learning algorithm takes advantage of its own variable selection process and performs feature selection and classification at same time. Common embedded methods include Lasso and various types of tree-based algorithms. It is featured as:
+Embedded Method combine the advantages of the filter and wrapper methods. A learning algorithm takes advantage of its own variable selection process and performs feature selection and classification
+at same time. Common embedded methods include Lasso and various types of tree-based algorithms. It is featured as:
 
 - perform feature selection as part of the model building process
 - consider interactions between features
 - less computationally expensive as it only train the model once, compared to Wrappers
 - usually provide the best performing subset for a give ML algorithm, but probably not for another
-
-
 
 #### 4.3.1 Regularization with Lasso
 
@@ -834,3 +848,5 @@ While it is well known to use cross-validation or at least separate a validation
 14. https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html#sklearn.preprocessing.QuantileTransformer
 
 15. https://machinelearningmastery.com/data-leakage-machine-learning/
+
+16. https://neuraldesigner.com/blog/genetic_algorithms_for_feature_selection
